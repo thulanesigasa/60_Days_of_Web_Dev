@@ -89,12 +89,15 @@ h1 {
 .input-group {
     position: relative;
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-bottom: 60px;
+    align-items: flex-end;
 }
 
 input {
     flex: 1;
+    min-width: 200px;
     height: 70px;
     padding: 0 30px;
     font-size: 12px;
@@ -116,6 +119,7 @@ input:focus {
 
 .mil-select {
     height: 70px;
+    min-width: 100px;
     padding: 0 20px;
     font-size: 12px;
     text-transform: uppercase;
@@ -314,6 +318,13 @@ input:focus {
     
     .input-group {
         flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    input, .mil-select {
+        width: 100%;
+        min-width: 100%;
     }
     
     .mil-button {
