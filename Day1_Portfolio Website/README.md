@@ -11,3 +11,15 @@ Today marks the first day of my journey into Web Development!
 - **Technology Solutions & Consulting**: providing innovative tech solutions and systems integration.
 
 
+
+## How to Run
+This is a static website. You can run it in following ways:
+
+### 1. Simple Open
+Simply open `index.html` in any modern web browser.
+
+### 2. Using a Local Server (Recommended)
+If you have Node.js installed, you can run:
+`bash
+npx serve .
+`

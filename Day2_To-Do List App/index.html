@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2: To-Do List App | 60 Days of Web Dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="mil-wrapper">
+        <div class="mil-header-info">
+            <span class="mil-suptitle">Day 02 / Project</span>
+            <div id="mil-clock" class="mil-clock">--:--:--</div>
+        </div>
+        <h1>Minimal<br><span class="mil-accent" style="color: var(--accent-color);">To-Do List</span></h1>
+
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <select id="priority-select" class="mil-select">
+                <option value="low">Low</option>
+                <option value="medium" selected>Med</option>
+                <option value="high">High</option>
+            </select>
+            <button class="mil-button" id="add-btn">
+                <span>Add Task</span>
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <ul class="todo-list" id="todo-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+
+        <div class="todo-footer" id="todo-footer" style="display: none;">
+            <span id="task-count">0 tasks left</span>
+            <button id="clear-completed" class="mil-link mil-accent">Clear Finished</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
